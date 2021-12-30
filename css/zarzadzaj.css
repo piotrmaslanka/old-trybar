@@ -1,0 +1,188 @@
+/* customization z main.css */
+/* welcomebar nie istnieje */
+#content_area_content {
+	width: 517px;
+	background: url('../gfx/zarzadzanie/tlo.png') no-repeat;
+	height: 239px;
+	background-color: #676151;
+}
+		
+#content_area_padtop_leftmenu {
+		text-align: center;		/* positioning moje konto img */
+}		
+		
+#content_area_content_leftmenu, #content_area_content_rightmenu {  /* musza zawsze miec wspolna wysokosc */
+	height: 260px;
+}
+
+#acc_box_header {
+	height: 37px;
+	text-align: left;
+	width: 251px;
+	background: url('../gfx/lewy_box_tytul_sample.gif') repeat-x;
+}
+	#nickname_box {
+		color: white;
+		font-size: 14px;
+		display: inline-block;
+		padding-top: 7px;
+		padding-left: 7px;
+	}
+	#nickname_box #nickname { font-weight: bold; }
+
+#top_part {
+	border-collapse: separate;
+	margin-left: 100px;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+	.tp_label { text-align: right; }
+	.tp_spacer { width: 20px; }
+	#top_part td { vertical-align: middle; border-top: 3px; border-bottom: 3px; }
+	#top_part input {
+		width: 197px; height: 21px; border: none; 
+		padding: 0 0 0 0;
+		color: white;
+		background: url('../gfx/logowanie/pole.gif');		
+	}
+
+
+#content_area_content_leftmenu #userphoto { border: 1px solid black; float: left; margin: 5px 0px 0px 5px;}
+#content_area_content_leftmenu { text-align: left; }
+#account_description {
+	float: right;
+	font-size: 11px;
+	width: 90px;
+	color: white; 
+	font-weight: bold;
+	line-height: 20px;
+	margin-right: 8px;
+	margin-top: 5px; 
+}
+	#account_description .value { float: right; }
+	#account_description a { color: white; }
+	
+#content_area_content_c {
+	padding: 53px 5px 5px 5px;
+	text-align: left;
+}
+
+/* kontent */
+#ie_safeguard { width: 507px; height: 1px; }
+
+#top_part {
+	border-collapse: separate;
+	margin-left: 100px;
+	font-size: 13px;
+}
+	#napis_ze_opis {
+		margin-left: 262px;
+		font-size: 13px;
+	}
+	#descript_box {
+		color: black;
+		font-size: 13px;
+		margin-right: 45px;
+		float: right;
+	}
+	#main_obrazek { margin-left: 45px; }
+	#tabela_z_innymi_obrazkami .rest textarea {
+		width: 200px;
+		border: 1px solid #565455;
+		color: white;
+		font-family: Arial;
+		padding: 0;
+		height: 107px;
+		background: url('../gfx/zarzadzanie/opis_sample.gif') repeat-x top;
+		background-color: #bfbfbf;
+	}
+
+	#tabela_z_innymi_obrazkami { border-collapse: collapse; }
+		#tabela_z_innymi_obrazkami td { padding-top: 10px; padding-bottom: 10px; }
+		#tabela_z_innymi_obrazkami .margleft { width: 45px; }
+		#tabela_z_innymi_obrazkami .obrazek { width: 210px; height: 158px; }
+		#tabela_z_innymi_obrazkami .obrazek img { border: 1px solid black; }
+		#tabela_z_innymi_obrazkami .spacer { width: 10px; }
+		#tabela_z_innymi_obrazkami .rest { width: 202px; }
+			#tabela_z_innymi_obrazkami .rest .asmain {
+				height: 109px;
+				width: 100%;
+			}
+			#tabela_z_innymi_obrazkami .rest .guzik { height: 49px; width: 100%; }
+			
+			#tabela_z_innymi_obrazkami .rest .usun {
+				width: 116px;
+				height: 36px;
+				border: none; padding: 0; margin: 10px 0 0 0; background: url('../gfx/zarzadzanie/button_usun.gif');
+			}
+			#tabela_z_innymi_obrazkami .rest .usun:hover { background: url('../gfx/zarzadzanie/button_usun_p.gif'); }
+
+			#tabela_z_innymi_obrazkami .rest .jakoglowny {
+				width: 145px;
+				height: 36px;
+				border: none; padding: 0; margin: 10px 0 0 0; background: url('../gfx/zarzadzanie/button_ustaw.gif');
+			}
+			#tabela_z_innymi_obrazkami .rest .jakoglowny:hover { background: url('../gfx/zarzadzanie/button_ustaw_p.gif'); }
+	
+	#avatar_select {
+		margin-left: 50px;
+		width: 400px; height: 36px;
+		position: relative;
+		margin-bottom: 30px;
+		cursor: hand;
+		cursor: pointer;
+	}
+		#avatar_select_field { position: absolute; width: 400px; height: 36px; 
+			opacity: 0;
+			-moz-opacity: 0;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			filter: alpha(opacity=0);				
+		}
+		#avatar_select_button { float: left; height: 36px; width: 116px; background: url('../gfx/profil/button_przegladaj.gif');}
+		
+		#avatar_select_field_holder { border: 1px solid black; padding: 0 0 0 0; background: url('../gfx/alfa.gif'); width: 260px; float: right; height: 21px; margin-top: 5px;}
+		
+	#save_button { border: none; width: 174px; height: 52px; background: url('../gfx/zarzadzanie/button_akceptuj.gif'); margin-left: 166px; margin-bottom: 40px; }
+	#save_button:hover { background: url('../gfx/zarzadzanie/button_akceptuj_p.gif'); }
+
+/* koniec kontentu */
+
+#lewybox_panel {
+	border-collapse: collapse;
+	border-width: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+	#lewybox_panel div { width: 120px; }
+	#lewybox_panel img { border: none; }
+
+#napisz_wiadomosc {
+ height: 35px;
+ background: url('../gfx/button_napisz.gif') top left no-repeat;
+}
+	#napisz_wiadomosc:hover { background: url('../gfx/button_napisz_p.gif') top left no-repeat; }
+	
+#prywatna_galeria {
+ height: 50px;
+ background: url('../gfx/button_galeria.gif') bottom right no-repeat;
+}
+	#prywatna_galeria:hover { background: url('../gfx/button_galeria_p.gif') bottom right no-repeat; }
+
+#dodaj_zdjecie {
+ height: 35px;
+ background: url('../gfx/button_zdjecie.gif') top right no-repeat;
+}
+	#dodaj_zdjecie:hover { background: url('../gfx/button_zdjecie_p.gif') top right no-repeat; }	
+	
+#lewybox_panel_txt {
+	vertical-align: top;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+}
+	#zmodyfikuj_konto {
+		font-size: 13px;
+	}
+	#zmodyfikuj_konto a { color: white; }
+	#zmodyfikuj_konto a:hover { text-decoration: underline; }

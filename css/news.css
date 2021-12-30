@@ -1,0 +1,145 @@
+/* customization z main.css */
+#welcomebar_lft {
+	background: url('../gfx/news/news.gif') center no-repeat;
+}
+#welcomebar_mid {
+		text-align: center;
+		font-size: 14px;
+}
+#welcomebar {
+	height: 66px;
+}
+#welcomebar_rgt {
+	
+}
+	#welcomebar_rgt div { color: white; }
+
+	#welcomebar_rgt div.left, #welcomebar_rgt div.right {
+		padding-top: 4px;
+		font-size: 11px;
+	}
+	#welcomebar_rgt_register { 
+		position: absolute;
+		font-size: 16px;
+		bottom: 20px;
+		right: 4px;
+	}
+	#welcomebar_rgt_register:hover { text-decoration: underline; }
+
+#content_area {
+	width: 998px;
+}
+	#content_area_header { height: 37px; width: 998px; position: relative; }
+	#content_area_header_center {
+		width: 970px;
+		height: 27px;
+		text-align: left;
+		position: absolute;
+		top: 0;
+		left: 9px;
+		padding-left: 10px;
+		padding-top: 10px;
+		font-size: 15px;
+		color: white;
+		margin: 0 0 0 0;
+		background: url('../gfx/news/naglowek_sample.png') repeat-x;
+	}
+	#content_area_header_imgl {
+		position: absolute;
+		top: 0; left: 0;
+		height: 37px;
+		width: 9px;
+		background: url('../gfx/news/naglowek_lewy_rog.png');
+	}
+	#content_area_header_imgr {
+		position: absolute;
+		top: 0; right: 0;
+		height: 37px;
+		width: 9px;
+		background: url('../gfx/news/naglowek_prawy_rog.png');
+	}	
+	
+	#content_area_content {
+		width: 974px;
+		font-size: 12px;
+		text-align: left;
+		color: white;
+		padding: 10px 12px 10px 12px;
+		background: url('../gfx/news/tresc_tlo_sample.png') repeat-y;
+	}
+	#content_area_footer {
+		width: 998px;
+		height: 11px;
+		background: url('../gfx/news/tresc_tlo_dol.png');
+	}
+	
+#comments {
+	background: url('../gfx/news/komentarze.png') no-repeat top;
+	padding-top: 48px;
+	width: 517px;
+	float: left;
+	margin-left: 251px;	
+	text-align: left;
+	color: white;
+	font-size: 12px;
+}
+	.comments_b1 {
+		width: 511px;
+		background-color: #333029;
+		padding: 3px 3px 3px 3px;
+	}
+	.comments_b2 {
+		width: 511px;
+		background-color: #676151;
+		padding: 3px 3px 3px 3px;
+	}
+
+	.comments_kiedy {
+		font-size: 11px;
+		padding-right: 8px;
+	}
+	.comments_kto {
+		color: orange;
+	}	
+	
+		.kaszak {
+			float: right;
+			margin-top: 3px;
+			width: 11px;
+			height: 12px;
+			background: url('../gfx/odbiorcza/krzyzyk.gif');
+		}
+		.kaszak:hover { background: url('../gfx/odbiorcza/krzyzyk_p.gif'); }
+		.kaszak a { display: block; width: 100%; height: 100%; }
+	
+	
+	#comments_add {
+		width: 517px;
+		padding: 0 0 0 0;
+		color: white;
+		height: 21px;
+		background: url('../gfx/news/pole.gif') repeat-x;
+		border: none;
+	}
+#send_comment_news_submit {
+padding: 0 0 0 0;
+width: 53px;
+background: url('../gfx/button_wyslij.gif');
+margin-left: 8px;
+border: none; 
+border-width: 0;
+}
+#send_comment_news_submit:hover { background: url('../gfx/button_wyslij_p.gif'); }
+
+#send_comment_news_submit_background {
+	height: 50px;
+	width: 517px;
+	float: left;
+	background-color: #676151;
+}
+#login_to_add_comment_background {
+	height: 15px;
+	width: 517px;
+	float: left;
+	background-color: #676151;
+}

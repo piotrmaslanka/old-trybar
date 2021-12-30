@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^www\.trybar\.pl
+RewriteRule ^(.*)$ http://www.trybar.pl/$1 [r=301,L]
+

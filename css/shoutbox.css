@@ -1,0 +1,35 @@
+#content_area_content_rightmenu { text-align: right; position: relative; padding-bottom: 5px; }
+	
+.shout {
+	padding-left: 30px;
+	padding-right: 10px;
+	font-size: 11px;
+	color: white;
+}
+.classB { background: url('../gfx/prawy_box_kreska.gif'); }
+.shout_who a { color: orange; font-weight: bold; }
+.shout_when { color: black; }
+
+#shoutbox_content { overflow: hidden; position: relative; }
+
+#shoutbox_scroller { position: absolute; width: 100%; }
+
+#shoutbox_superposition {
+	width: 230px;
+	height: 21px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background: url('../gfx/prawy_box_tlo_sample.gif');
+	z-index: 10;
+	
+}
+
+#shoutbox_entry {
+		width: 197px; 
+		height: 21px; 
+		border: none; 
+		padding: 0 0 0 0;
+		color: white;
+		background: url('../gfx/logowanie/pole.gif');	
+}

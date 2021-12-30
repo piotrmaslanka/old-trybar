@@ -1,0 +1,122 @@
+/* customization z main.css */
+#welcomebar_lft {
+	background: url('../gfx/odzyskiwanie/odzyskiwanie.gif') center no-repeat;
+}
+#welcomebar_mid {
+		background: url('../gfx/odzyskiwanie/pglowny_tlo_top.gif');
+		text-align: center;
+		font-size: 14px;
+}
+#welcomebar {
+	height: 66px;
+}
+#welcomebar_rgt {
+	background: url('../gfx/nie_masz_jeszcze_konta_sample.gif') repeat-x;
+}
+	#welcomebar_rgt div { color: white; }
+
+	#welcomebar_rgt div.left, #welcomebar_rgt div.right {
+		padding-top: 4px;
+		font-size: 11px;
+	}
+	#welcomebar_rgt_register { 
+		position: absolute;
+		font-size: 16px;
+		bottom: 20px;
+		right: 4px;
+	}
+	#welcomebar_rgt_register:hover { text-decoration: underline; }
+
+#content_area_content {
+	width: 517px;
+	background: url('../gfx/odzyskiwanie/pglowny_tlo_bottom.gif') no-repeat;
+	height: 224px;
+	background-color: #666151;
+}
+				
+#content_area_content_leftmenu, #content_area_content_rightmenu {  /* musza zawsze miec wspolna wysokosc */
+	height: 170px;
+	overflow: hidden;
+}
+
+#acc_box_header {
+	height: 37px;
+	text-align: left;
+	width: 251px;
+	background: url('../gfx/lewy_box_tytul_sample.gif') repeat-x;
+}
+	#nickname_box {
+		color: white;
+		font-size: 15px;
+		display: inline-block;
+		padding-top: 7px;
+		padding-left: 7px;
+	}
+	#nickname_box #nickname { font-weight: bold; }
+
+#content_area_content_leftmenu { 
+	padding: 0px 5px 0px 5px;
+	color: white;
+	font-size: 11px;
+}
+
+#content_area_content_c {
+	padding: 0px 5px 5px 5px;
+	text-align: left;
+}
+	
+#menu_cut {
+	padding-left: 80px;
+	margin-top: 20px;
+	text-align: left;
+	font-size: 12px;
+}
+
+	#menu_cut input.txt { width: 197px; height: 21px; border: none; 
+		padding: 0 0 0 0;
+		color: white;
+		background: url('../gfx/logowanie/pole.gif');
+	}
+		#loginfield {
+			padding-top: 0px;
+			vertical-align: middle;
+			border-collapse: collapse;
+			border-width: 0px;
+		}
+		#loginfield td { padding-right: 5px; height: 25px;}
+		#loginfield a { color: orange; }
+		#loginfield a:hover { font-weight: bold; }
+
+
+		#invalid_login { color: red; font-weight: bold; }
+
+	#loguj_button {
+		width: 174px;
+		height: 52px;
+		border: none;
+		padding: 0 0 0 0;
+		margin-left: 35px;
+		margin-top: 10px;
+		background: url('../gfx/odzyskiwanie/button_odzyskiwanie.gif');
+	}
+	
+	#loguj_button:hover { background: url('../gfx/odzyskiwanie/button_odzyskiwanie_p.gif'); }
+
+#content_area_content_rightmenu { text-align: right; overflow: hidden; }
+
+
+.newsfuck {	/* jeden item newsow */
+	padding: 5px 10px 5px 0px;
+	text-align: right;
+	font-size: 13px;
+	color: white;
+	width: 220px;
+	background: url('../gfx/prawy_box_kreska.gif') bottom right no-repeat;
+	
+}
+	.czytajwiecej {
+		color: #ae6226;
+		font-size: 13px;
+	}
+	.czytajwiecej:hover { font-weight: bold;}
+/* ta linijka ma tu zostac dopoki nie dostanie swojej grafiki / ciezarowki browaru. Skoro TryBAR stawia piwo... */

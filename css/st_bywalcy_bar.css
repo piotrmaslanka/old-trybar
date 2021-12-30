@@ -1,0 +1,189 @@
+/* customization z main.css */
+/* welcomebar nie istnieje */
+#content_area_content {
+	width: 517px;
+	background: url('../gfx/st_bywalcy_bar/stali_bywalcy.jpg') no-repeat;
+	height: 239px;
+	background-color: #676151;
+}
+		
+#content_area_padtop_leftmenu {
+		text-align: center;		/* positioning moje konto img */
+}		
+		
+#content_area_content_leftmenu, #content_area_content_rightmenu {  /* musza zawsze miec wspolna wysokosc */
+	height: 260px;
+}
+
+#acc_box_header {
+	height: 37px;
+	text-align: left;
+	width: 251px;
+	background: url('../gfx/lewy_box_tytul_sample.gif') repeat-x;
+}
+	#nickname_box {
+		color: white;
+		font-size: 14px;
+		display: inline-block;
+		padding-top: 7px;
+		padding-left: 7px;
+	}
+	#nickname_box #nickname { font-weight: bold; }
+
+#content_area_content_leftmenu #userphoto { border: 1px solid black; float: left; margin: 5px 0px 0px 5px;}
+#content_area_content_leftmenu { text-align: left; }
+#account_description {
+	float: right;
+	font-size: 11px;
+	width: 90px;
+	color: white; 
+	font-weight: bold;
+	line-height: 20px;
+	margin-right: 8px;
+	margin-top: 5px; 
+}
+	#account_description .value { float: right; }
+	#account_description a { color: white; }
+	
+#content_area_content_c {
+	padding: 53px 5px 5px 5px;
+	text-align: left;
+}
+
+/* kontent */
+#ie_safeguard { width: 507px; height: 1px; }
+
+#top_part {
+	border-collapse: separate;
+	margin-left: 100px;
+	font-size: 13px;
+}
+	#password_change_label span { padding-left: 20px; }
+	#password_change_label { height: 30px; }
+	.tp_label { text-align: right; }
+	.tp_spacer { width: 20px; }
+	#top_part td { vertical-align: middle; border-top: 3px; border-bottom: 3px; }
+	#top_part input {
+		width: 197px; height: 21px; border: none; 
+		padding: 0 0 0 0;
+		color: white;
+		background: url('../gfx/logowanie/pole.gif');		
+	}
+	
+	td.miniseparator { height: 10px; }
+
+
+	#avatar_select {
+		margin-left: 50px;
+		width: 400px; height: 36px;
+		position: relative;
+		margin-bottom: 30px;
+	}
+		#avatar_select_field { position: absolute; width: 400px; height: 36px; 
+			opacity: 0;
+			-moz-opacity: 0;
+			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+			filter: alpha(opacity=0);				
+		}
+		#avatar_select_button { float: left; height: 36px; width: 116px; background: url('../gfx/profil/button_przegladaj.gif');}
+		
+		#avatar_select_field_holder { border: 1px solid black; padding: 0 0 0 0; background: url('../gfx/alfa.gif'); width: 260px; float: right; height: 21px; margin-top: 5px;}
+		
+	#save_button { border: none; width: 174px; height: 52px; background: url('../gfx/profil/button_zapisz.gif'); margin-left: 166px; margin-bottom: 40px; }
+	#save_button:hover { background: url('../gfx/profil/button_zapisz_p.gif'); }
+
+	.line {
+		width: 497px;
+		height: 1px;
+		background: url('../gfx/odbiorcza/separator_kreska.png');
+	}
+	.msg {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		width: 497px;		
+		height: 50px;
+		font-size: 12px;
+	}
+		.msg .fota {
+			float: left;
+			height: 50px;
+			width: 50px;
+			line-height: 50px;
+		}
+			.msg .fota img { height: 50px; width: 50px; }
+		.msg .nazwa {
+			width: 300px;
+			margin-left: 20px;
+			height: 50px;
+			float: left;
+			line-height: auto;
+		}
+		.msg .nazwa .username {
+			margin-top: 5px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.msg .nazwa .townname {
+			font-size: 15px;
+		}
+		.msg .guziczek { 
+			float: right;
+			height: 50px;			
+		}
+		.msg .guziczek div {
+			margin-top: 7px;
+			width: 116px;
+			height: 36px;
+			background: url('../gfx/czyjs_profil/button_usun.png');
+		}
+			.msg .guziczek div:hover { background: url('../gfx/czyjs_profil/button_usun_p.png'); }
+			.msg .guziczek div a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+
+
+/* koniec kontentu */
+
+
+
+#lewybox_panel {
+	border-collapse: collapse;
+	border-width: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+	#lewybox_panel div { width: 120px; }
+	#lewybox_panel img { border: none; }
+
+#napisz_wiadomosc {
+ height: 35px;
+ background: url('../gfx/button_napisz.gif') top left no-repeat;
+}
+	#napisz_wiadomosc:hover { background: url('../gfx/button_napisz_p.gif') top left no-repeat; }
+	
+#prywatna_galeria {
+ height: 50px;
+ background: url('../gfx/button_galeria.gif') bottom right no-repeat;
+}
+	#prywatna_galeria:hover { background: url('../gfx/button_galeria_p.gif') bottom right no-repeat; }
+
+#dodaj_zdjecie {
+ height: 35px;
+ background: url('../gfx/button_zdjecie.gif') top right no-repeat;
+}
+	#dodaj_zdjecie:hover { background: url('../gfx/button_zdjecie_p.gif') top right no-repeat; }	
+	
+#lewybox_panel_txt {
+	vertical-align: top;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+}
+	#zmodyfikuj_konto {
+		font-size: 13px;
+	}
+	#zmodyfikuj_konto a { color: white; }
+	#zmodyfikuj_konto a:hover { text-decoration: underline; }

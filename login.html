@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+"http://www.w3.org/TR/html4/strict.dtd">
+ <html>
+<head>
+	<title>GigaBajt</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">	<!-- brzydko ale nie mam czasu :) -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jqueryui.js"></script>	
+</head>
+<body>
+	<div id="haslo_przewodnie"></div>	<!-- twoj bar, twoja wodka -->
+	<div id="top"></div>				<!-- duzy obrazek z duza iloscia wodki -->
+	<div id="menubar">					<!-- glowne menu - to brazowe - szkoda ze bez wodki -->
+		<div id="menubar_l"></div><div id="menubar_r"></div>	<!-- dekoratory - koncowki menu -->
+			
+		<div id="menubar_m">	<!-- cale menu za wylaczeniem koncowek -->
+			<div id="menubar_login">
+				<input type="text" value="Login" id="menubar_login_login">
+				<input type="password" value="Haslo" id="menubar_login_password">
+				<input type="submit" value="" id="menubar_login_submit">				
+										<!-- albo czysty zwykly tekst ktory zostanie nice sformatowany 
+				Witaj Ojou-sama!
+						-->
+			</div>
+			<div id="menubar_links">
+				<a href="#"><img src="gfx/button_glowna.gif" alt="Strona główna" onmouseover="$(this).attr('src','gfx/button_glowna_p.gif')" onmouseout="$(this).attr('src','gfx/button_glowna.gif')"></a>
+				<img src="gfx/menu_separator.gif" alt="">
+				<a href="#"><img src="gfx/button_konto.gif" alt="Moje konto"  onmouseover="$(this).attr('src','gfx/button_konto_p.gif')" onmouseout="$(this).attr('src','gfx/button_konto.gif')"></a>
+				<img src="gfx/menu_separator.gif" alt="">
+				<a href="#"><img src="gfx/button_dodaj.gif" alt="Dodaj bar" onmouseover="$(this).attr('src','gfx/button_dodaj_p.gif')" onmouseout="$(this).attr('src','gfx/button_dodaj.gif')"></a>
+				<img src="gfx/menu_separator.gif" alt="">
+				<a href="#"><img src="gfx/button_szukaj.gif" alt="Szukaj baru" onmouseover="$(this).attr('src','gfx/button_szukaj_p.gif')" onmouseout="$(this).attr('src','gfx/button_szukaj.gif')"></a>
+				<img src="gfx/menu_separator.gif" alt="">
+				<a href="#"><img src="gfx/button_ruzytkownikow.gif" alt="Ranking userów" onmouseover="$(this).attr('src','gfx/button_ruzytkownikow_p.gif')" onmouseout="$(this).attr('src','gfx/button_ruzytkownikow.gif')"></a>
+				<img src="gfx/menu_separator.gif" alt="">
+				<a href="#"><img src="gfx/button_rbarow.gif" alt="Ranking barów" onmouseover="$(this).attr('src','gfx/button_rbarow_p.gif')" onmouseout="$(this).attr('src','gfx/button_rbarow.gif')"></a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="welcomebar">			<!-- Witamy na TryBAR / Witaj Ojou-sama poziomy pasek na cala dlugosc strony -->
+		<img src="gfx/mid_border.png" style="position: absolute; left: 0; top: 0;" alt="">
+		<img src="gfx/mid_border.png" style="position: absolute; right: 0; top: 0;" alt="">
+
+		<div id="welcomebar_rgt">
+			<div class="left">Zapomniałeś hasła?</div>
+			<div class="right">Nie masz jeszcze konta?</div>
+			<a href="#">
+				<div id="welcomebar_rgt_register">Zarejestruj się - za darmo!</div>
+			</a>
+		</div>
+		<div id="welcomebar_mid">
+			<div id="welcomebar_mid_spacer">Czynność którą chcesz wykonać wymaga zalogowania się</div>
+		</div>
+		<div id="welcomebar_lft">
+		</div>
+	</div>
+
+	<div id="content_area_holder">
+		<table id="content_area">
+			<tr>
+				<td class="images_are_blocks">
+					<img src="gfx/logowanie/lewy_box_tytul.gif" alt=""><div id="content_area_content_leftmenu">
+						<div style="height: 17px;"></div>
+						Część czynności i miejsc w serwisie jest dostępna tylko i wyłącznie dla zalogowanych użytkowników dla bezpieczeństwa zarejestrowanych osób i materiałów przez nich zebranych<br><br>Jeśli nie posiadasz jeszcze konta w naszym serwisie nie zwlekaj i załóż je jak najszybciej! Posiadanie konta pozwoli Ci cieszyć się w pełni możliwościami strony.
+					</div><img src="gfx/lewy_box_dol.gif" alt="">
+				</td>	
+				<td id="content_area_content" rowspan="2">
+					<div id="content_area_content_c">	<!-- glowny kontener -->							
+						<div id="jesliniemasz">Jeśli nie masz jeszcze konta zarejestruj się <a href="#">tutaj</a></div>
+					
+					<form action="" method="">
+					
+					<div id="menu_cut">
+						<table id="loginfield">
+							<!-- if (!login_successful()) { -->
+							<tr>
+								<td colspan="2" id="invalid_login">
+									TITS OR GTFO!
+								</td>
+							</tr>
+							<!-- } -->
+							<tr>
+								<td>
+									Login: 
+								</td>
+								<td>
+									<input type="text" class="txt">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Hasło: 
+								</td>
+								<td>
+									<input type="password" class="txt">
+								</td>
+							</tr>
+							<tr>
+								<td>
+								</td>
+								<td>
+									Nie pamiętasz swojego hasła?
+								</td>
+							</tr>
+							<tr>
+								<td>
+								</td>
+								<td>
+									<a href="#">Tutaj</a> pomożemy ci je odzyskać
+								</td>
+							</tr>
+						</table>
+						
+						<input type="submit" id="loguj_button" value="">
+					</div>
+					
+					</form>
+					</div>
+				
+				</td>
+				<td class="images_are_blocks">
+					<img src="gfx/glowna/prawy_box_tytul.gif" alt=""><div id="content_area_content_rightmenu">
+						<div class="newsfuck">
+							Ssij pałe!<br>
+							<a href="#"><span class="czytajwiecej">Czytaj więcej</span></a>
+						</div>
+						<div class="newsfuck">
+							Ssij pałe!<br>
+							<a href="#"><span class="czytajwiecej">Czytaj więcej</span></a>
+						</div>
+						<div class="newsfuck">
+							Ssij pałe!<br>
+							<a href="#"><span class="czytajwiecej">Czytaj więcej</span></a>
+						</div>
+						<div class="newsfuck">
+							Ssij pałe!<br>
+							<a href="#"><span class="czytajwiecej">Czytaj więcej</span></a>
+						</div>
+					</div><img src="gfx/prawy_box_dol.gif" alt="">
+				</td>
+			</tr>
+					
+			<tr>
+				<td id="content_area_padbottom_leftmenu"></td>
+				<td id="content_area_padbottom_rightmenu"></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div id="footer">
+						<div id="wszelkieprawa">
+							Wszelkie prawa zastrzeżone &copy; TRYBAR 2011
+						</div>
+						<div id="realizacja">
+							Projekt i realizacja<br>FDN Studio
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

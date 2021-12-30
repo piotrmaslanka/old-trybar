@@ -1,0 +1,90 @@
+/* customization z main.css */
+/* welcomebar nie istnieje */
+#content_area_content {
+	width: 517px;
+	background: url('../gfx/kontakt/tlo.jpg') no-repeat;
+	height: 239px;
+	background-color: #676151;
+	
+}
+		
+#content_area_padtop_leftmenu {
+		text-align: center;		/* positioning moje konto img */
+}		
+		
+#content_area_content_leftmenu, #content_area_content_rightmenu {  /* musza zawsze miec wspolna wysokosc */
+	height: 260px;
+}
+
+#content_area_content_c {
+	padding: 53px 5px 5px 5px;
+	text-align: center;
+	
+}
+
+
+
+/* kontent */
+#ie_safeguard { width: 507px; height: 1px; }
+	#email { width: 260px; height: 21px; background: url('../gfx/napisz/pole_tekstowe.gif'); color: white; border: none; padding: 0; }
+	#title { width: 260px; height: 21px; background: url('../gfx/napisz/pole_tekstowe.gif'); color: white; border: none; padding: 0; }
+	#msgcontent { height: 218px; background: url('../gfx/napisz/tlo_tresc_sample.gif') repeat-x; padding: 0; border: none; color: white; width: 480px; }
+		
+#b_wyslij {
+	margin-top: 20px;
+	width: 174px;
+	border: none;
+	padding: 0;
+	height: 52px;
+	background: url('../gfx/napisz/button_wyslij.gif');
+}	
+#b_wyslij:hover { background: url('../gfx/napisz/button_wyslij_p.gif'); }
+
+/* koniec kontentu */
+
+#leftmenu_info {
+	padding: 80px 5px 0px 5px;
+	color: white;
+	font-size: 11px;
+}
+
+.newsfuck {	/* jeden item newsow */
+	padding: 5px 10px 5px 0px;
+	text-align: right;
+	font-size: 13px;
+	color: white;
+	width: 220px;
+	background: url('../gfx/prawy_box_kreska.gif') bottom right no-repeat;
+	
+}
+	.czytajwiecej {
+		color: #ae6226;
+		font-size: 13px;
+	}
+	.czytajwiecej:hover { font-weight: bold;}
+	
+#welcomebar_lft {
+	background: url('../gfx/glowna/witamy.gif') center no-repeat;
+}
+#welcomebar_mid {
+		background: url('../gfx/pglowny_srodek.gif');
+}
+#welcomebar {
+	height: 66px;
+}
+#welcomebar_rgt {
+	background: url('../gfx/nie_masz_jeszcze_konta_sample.gif') repeat-x;
+}
+	#welcomebar_rgt div { color: white; }
+
+	#welcomebar_rgt div.left, #welcomebar_rgt div.right {
+		padding-top: 4px;
+		font-size: 11px;
+	}
+	#welcomebar_rgt_register { 
+		position: absolute;
+		font-size: 16px;
+		bottom: 20px;
+		right: 4px;
+	}
+	#welcomebar_rgt_register:hover { text-decoration: underline; }

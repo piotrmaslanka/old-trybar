@@ -1,0 +1,66 @@
+#category_selector {
+    width: 517px;
+    height: 30px;
+    background: url('../../gfx/o/nagrody/submenu_sample.gif') repeat-x;
+}
+    #category_selector .element {
+        width: 258px; height: 30px;
+        line-height: 30px;       
+        text-align: center;
+        float: left;
+    }
+        #category_selector .element a { color: rgb(255, 165, 0); font-size: 11px; text-decoration: none; }
+
+#goblin_banner {
+    width: 517px;
+    height: 94px;
+    
+    background: url('../../gfx/o/nagrody/goblin.jpg');
+}        
+
+#root_content > .content {
+    width: 517px; min-height: 239px;
+    
+    padding-top: 85px;
+    padding-bottom: 20px;
+    
+    background-repeat: no-repeat;
+}
+    #root_content > .content > .element {
+        height: 63px;
+        width: 517px;
+    }
+        #root_content > .content .element .left {
+            float: left;
+            width: 52px;
+            height: 63px;            
+            line-height: 63px;
+            text-align: center;
+        }
+        #root_content > .content .element .middle { 
+            float: left; 
+            height: 63px;
+            line-height: 63px;
+            
+            font-size: 12px;
+        }
+            #root_content > .content .element .middle a { color: black; text-decoration: none; }
+               
+        #root_content > .content .element .right { 
+            float: left;
+            margin-top: 2px;
+            margin-left: 10px;
+            height: 63px;
+        }
+        
+
+#wybierz_button {
+    width: 174px; height: 52px;
+    border: none;
+    display: block;
+    
+    margin: 10px auto 0 auto;
+    
+    background: url('../../gfx/o/nagrody/button_wybierz.gif');
+}
+    #wybierz_button:hover { background: url('../../gfx/o/nagrody/button_wybierz_p.gif'); }

@@ -1,0 +1,314 @@
+/* customization z main.css */
+#welcomebar_lft {
+	background: url('../gfx/aktualnosci/moje_konto.gif') center no-repeat;
+}
+#welcomebar_mid {
+		text-align: center;
+		font-size: 14px;
+}
+#welcomebar {
+	height: 66px;
+}
+#welcomebar_rgt {
+	
+}
+	#welcomebar_rgt div { color: white; }
+
+	#welcomebar_rgt div.left, #welcomebar_rgt div.right {
+		padding-top: 4px;
+		font-size: 11px;
+	}
+	#welcomebar_rgt_register { 
+		position: absolute;
+		font-size: 16px;
+		bottom: 20px;
+		right: 4px;
+	}
+	#welcomebar_rgt_register:hover { text-decoration: underline; }
+
+#content_area {
+	width: 998px;
+}
+	#content_area_header { height: 37px; width: 998px; position: relative; }
+	#content_area_header_center {
+		width: 970px;
+		height: 27px;
+		text-align: left;
+		position: absolute;
+		top: 0;
+		left: 9px;
+		padding-left: 10px;
+		padding-top: 10px;
+		font-size: 15px;
+		color: white;
+		margin: 0 0 0 0;
+		background: url('../gfx/news/naglowek_sample.png') repeat-x;
+	}
+	#content_area_header_imgl {
+		position: absolute;
+		top: 0; left: 0;
+		height: 37px;
+		width: 9px;
+		background: url('../gfx/news/naglowek_lewy_rog.png');
+	}
+	#content_area_header_imgr {
+		position: absolute;
+		top: 0; right: 0;
+		height: 37px;
+		width: 9px;
+		background: url('../gfx/news/naglowek_prawy_rog.png');
+	}	
+	
+	#content_area_content {
+		width: 998px;
+		font-size: 12px;
+		text-align: left;
+		color: white;
+		background: url('../gfx/news/tresc_tlo_sample.png') repeat-y;
+	}
+		.ad-gallery {
+		  width: 920px;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+		.ad-gallery, .ad-gallery * {
+		  margin: 0;
+		  padding: 0;
+		}
+		  .ad-gallery .ad-image-wrapper {
+			width: 100%;
+			height: 400px;
+			margin-bottom: 10px;
+			position: relative;
+			overflow: hidden;
+		  }
+			.ad-gallery .ad-image-wrapper .ad-loader {
+			  position: absolute;
+			  z-index: 10;
+			  top: 48%;
+			  left: 48%;
+			  border: 1px solid #CCC;
+			}
+			.ad-gallery .ad-image-wrapper .ad-next {
+			  position: absolute;
+			  right: 0;
+			  top: 0;
+			  width: 25%;
+			  height: 100%;
+			  cursor: pointer;
+			  display: block;
+			  z-index: 100;
+			}
+			.ad-gallery .ad-image-wrapper .ad-prev {
+			  position: absolute;
+			  left: 0;
+			  top: 0;
+			  width: 25%;
+			  height: 100%;
+			  cursor: pointer;
+			  display: block;
+			  z-index: 100;
+			}
+			.ad-gallery .ad-image-wrapper .ad-prev, .ad-gallery .ad-image-wrapper .ad-next {
+			  /* Or else IE will hide it */
+			  background: url(non-existing.jpg)\9
+			}
+			  .ad-gallery .ad-image-wrapper .ad-prev .ad-prev-image, .ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+				background: url(ad_prev.png);
+				width: 30px;
+				height: 30px;
+				display: none;
+				position: absolute;
+				top: 47%;
+				left: 0;
+				z-index: 101;
+			  }
+			  .ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+				background: url(ad_next.png);
+				width: 30px;
+				height: 30px;
+				right: 0;
+				left: auto;
+			  }
+			.ad-gallery .ad-image-wrapper .ad-image {
+			  position: absolute;
+			  overflow: hidden;
+			  top: 0;
+			  left: 0;
+			  z-index: 9;
+			}
+			  .ad-gallery .ad-image-wrapper .ad-image a img {
+				border: 0;
+			  }
+			  .ad-gallery .ad-image-wrapper .ad-image .ad-image-description { display: none; }
+		  .ad-gallery .ad-controls { display: none; }
+			.ad-gallery .ad-info {
+			  float: left;
+			}
+			.ad-gallery .ad-slideshow-controls {
+			  float: right;
+			}
+			  .ad-gallery .ad-slideshow-controls .ad-slideshow-start, .ad-gallery .ad-slideshow-controls .ad-slideshow-stop {
+				padding-left: 5px;
+				cursor: pointer;
+			  }
+			  .ad-gallery .ad-slideshow-controls .ad-slideshow-countdown {
+				padding-left: 5px;
+				font-size: 0.9em;
+			  }
+			.ad-gallery .ad-slideshow-running .ad-slideshow-start {
+			  cursor: default;
+			  font-style: italic;
+			}
+		  .ad-gallery .ad-nav {
+			width: 100%;
+			position: relative;
+		  }
+			.ad-gallery .ad-forward, .ad-gallery .ad-back {
+			  position: absolute;
+			  top: 0;
+			  height: 100%;
+			  z-index: 10;
+			}
+			/* IE 6 doesn't like height: 100% */
+			* html .ad-gallery .ad-forward, .ad-gallery .ad-back {
+			  height: 100px;
+			}
+			.ad-gallery .ad-back {
+			  cursor: pointer;
+			  left: -20px;
+			  width: 13px;
+			  display: block;
+			  background: url(ad_scroll_back.png) 0px 22px no-repeat;
+			}
+			.ad-gallery .ad-forward {
+			  cursor: pointer;
+			  display: block;
+			  right: -20px;
+			  width: 13px;
+			  background: url(ad_scroll_forward.png) 0px 22px no-repeat;
+			}
+			.ad-gallery .ad-nav .ad-thumbs {
+			  overflow: hidden;
+			  width: 100%;
+			}
+			  .ad-gallery .ad-thumbs .ad-thumb-list {
+				float: left;
+				width: 9000px;
+				height: 60px;
+				list-style: none;
+			  }
+				.ad-gallery .ad-thumbs li {
+				  float: left;
+				  padding-right: 5px;
+				}
+				  .ad-gallery .ad-thumbs li a {
+					display: block;
+				  }
+					.ad-gallery .ad-thumbs li a img {
+					  border: 3px solid #CCC;
+					  display: block;
+					}
+					.ad-gallery .ad-thumbs li a.ad-active img {
+					  border: 3px solid #616161;
+					}
+		/* Can't do display none, since Opera won't load the images then */
+		.ad-preloads {
+		  position: absolute;
+		  left: -9000px;
+		  top: -9000px;
+		}		
+		
+		#label_with_opis_napis {
+			width: 978px;
+			height: 38px;
+			line-height: 38px;
+			font-size: 14px;
+			padding-left: 20px;
+			font-weight: bold; font-family: Arial;
+			background: url('../gfx/bar/belka_pozioma_sample.png') repeat-x;
+		}
+		
+		#desc_field {
+			width: 978px;
+			padding-left: 10px; padding-right: 10px;
+			padding-top: 10px;
+		}
+	#content_area_footer {
+		width: 998px;
+		height: 11px;
+		background: url('../gfx/news/tresc_tlo_dol.png');
+	}
+	
+#comments {
+	background: url('../gfx/news/komentarze.png') no-repeat top;
+	padding-top: 48px;
+	width: 517px;
+	float: left;
+	margin-left: 251px;	
+	text-align: left;
+	color: white;
+	font-size: 12px;
+}
+	.comments_b1 {
+		width: 511px;
+		background-color: #333029;
+		padding: 3px 3px 3px 3px;
+	}
+	.comments_b2 {
+		width: 511px;
+		background-color: #676151;
+		padding: 3px 3px 3px 3px;
+	}
+
+	.comments_kiedy {
+		font-size: 11px;
+		padding-right: 8px;
+	}
+	.comments_kto {
+		color: orange;
+	}	
+	
+		.kaszak {
+			float: right;
+			margin-top: 3px;
+			width: 11px;
+			height: 12px;
+			background: url('../gfx/odbiorcza/krzyzyk.gif');
+		}
+		.kaszak:hover { background: url('../gfx/odbiorcza/krzyzyk_p.gif'); }
+		.kaszak a { display: block; width: 100%; height: 100%; }
+	
+	
+	#comments_add {
+		width: 517px;
+		padding: 0 0 0 0;
+		color: white;
+		height: 21px;
+		background: url('../gfx/news/pole.gif') repeat-x;
+		border: none;
+	}
+
+
+#send_comment_submit {
+padding: 0 0 0 0;
+width: 53px;
+background: url('../gfx/button_wyslij.gif');
+margin-left: 8px;
+border: none; 
+border-width: 0;
+}
+#send_comment_submit:hover { background: url('../gfx/button_wyslij_p.gif'); }
+
+#send_comment_submit_background {
+	height: 50px;
+	width: 517px;
+	float: left;
+	background-color: #676151;
+}
+#login_to_add_comment_background {
+	height: 15px;
+	width: 517px;
+	float: left;
+	background-color: #676151;
+}

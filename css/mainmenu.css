@@ -1,0 +1,141 @@
+/*
+    definiuje elementy menu zasadniczego
+    autor: Piotr Maślanka
+*/
+
+#mainmenu_menu {
+    width: 1100px;
+    height: 40px;
+
+    position: relative;
+    
+    margin-left: auto; margin-right: auto;
+}
+    #mainmenu_menu > .left {
+        position: absolute;        
+        left: 0; top: 0;
+        
+        height: 40px;
+        width: 9px;
+        
+        background: url('../gfx/mainmenu_left.png');
+    }
+    #mainmenu_menu > .right {
+        position: absolute;        
+        right: 0; top: 0;
+        
+        height: 40px;
+        width: 9px;
+        
+        background: url('../gfx/mainmenu_right.png');
+    }    
+    #mainmenu_menu > .center {
+        position: absolute;       
+        left: 9px; right: 9px; top: 0;        
+        
+        height: 40px;
+
+        line-height: 40px;
+        
+        background: url('../gfx/mainmenu_sample.gif') repeat-x;
+    }    
+        #mainmenu_menu > .center .element {
+            float: left;
+        }
+        #mainmenu_menu > .center .ellipsis {
+            float: left;
+            width: 4px; height: 40px;
+            background: url('../gfx/topmenu/sep.gif');
+        }
+        
+        #mainmenu_menu > .center > .right {
+            height: 21px;
+            margin-top: 9px;
+            float: right;
+        }
+            /* przerozniste rzeczy do logowania sie */
+            #mainmenu_menu > .center > .right input.textbox {
+                display: block;
+                float: left;
+                margin-left: 10px;
+                height: 21px;
+                width: 89px;
+                border: none; padding: 0 0 0 0;
+                background: url('../gfx/topmenu/pole_logowanie.gif');
+                font-size: 10px;
+                padding-left: 3px;
+                color: white;
+            }
+            #mainmenu_menu > .center > .right input.submitbox {
+                height: 21px;
+                margin-left: 10px;
+                margin-right: 35px;
+                float: left;
+                width: 56px;
+                border: none; padding: 0 0 0 0;
+                background: url('../gfx/topmenu/button_loguj.gif');
+            }
+                #mainmenu_menu > .center > .right input.submitbox:hover { background: url('../gfx/topmenu/button_loguj_p.gif'); }
+            /* rzeczy do wylogowywania sie */
+            #mainmenu_menu > .center > .right .label {
+                height: 21px;
+                line-height: 21px;
+                float: left;
+                font-size: 14px;
+                color: rgb(226, 127, 34);
+                font-weight: bold;
+            }
+            #mainmenu_menu > .center > .right .logout {
+                height: 21px;
+                margin-left: 10px;
+                margin-right: 35px;
+                float: left;
+                width: 65px;
+                border: none; padding: 0 0 0 0;
+                background: url('../gfx/topmenu/button_wyloguj.gif');
+            }
+                #mainmenu_menu > .center > .right .logout:hover { background: url('../gfx/topmenu/button_wyloguj_p.gif'); }
+            
+        
+        /* przerozne elementy menu */
+        #mm_glowna {
+            width: 93px; height: 40px;
+            background: url('../gfx/topmenu/button_glowna.png');
+        }
+        #mm_glowna:hover { background: url('../gfx/topmenu/button_glowna_p.png'); }
+        
+        #mm_konto {
+            width: 84px; height: 40px;
+            background: url('../gfx/topmenu/button_konto.png');
+        }
+        #mm_konto:hover { background: url('../gfx/topmenu/button_konto_p.png'); }        
+        
+        #mm_dodaj {
+            width: 80px; height: 40px;
+            background: url('../gfx/topmenu/button_dodaj.png');
+        }
+        #mm_dodaj:hover { background: url('../gfx/topmenu/button_dodaj_p.png'); }                
+        
+        #mm_szukaj {
+            width: 55px; height: 40px;
+            background: url('../gfx/topmenu/button_szukaj.png');
+        }
+        #mm_szukaj:hover { background: url('../gfx/topmenu/button_szukaj_p.png'); }                        
+        
+        #mm_ruzytkownikow {
+            width: 140px; height: 40px;
+            background: url('../gfx/topmenu/button_ruserzy.png');
+        }
+        #mm_ruzytkownikow:hover { background: url('../gfx/topmenu/button_ruserzy_p.png'); }                        
+
+        #mm_rbarow {
+            width: 106px; height: 40px;
+            background: url('../gfx/topmenu/button_rbary.png');
+        }
+        #mm_rbarow:hover { background: url('../gfx/topmenu/button_rbary_p.png'); }                                
+        
+        #mm_juve {
+            width: 107px; height: 40px;
+            background: url('../gfx/topmenu/button_juwenalia.png');
+        }
+        #mm_juve:hover { background: url('../gfx/topmenu/button_juwenalia_p.png'); }                                        

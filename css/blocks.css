@@ -1,0 +1,322 @@
+/*
+    bloki z których budujemy stronę
+    autor: Piotr Maślanka
+*/
+
+/* paginacja */
+#pagination {
+    float: right;
+    height: 14px;
+}
+    #pagination > * { float: left; margin: 0 1px 0 1px; }
+    #pagination .left {
+        width: 14px; height: 11px;        
+        background: url('../gfx/blocks/pagination/left.gif');
+    }
+    #pagination .right {
+        width: 14px; height: 11px;        
+        background: url('../gfx/blocks/pagination/right.gif');
+    }
+    #pagination .element {
+        width: 9px;
+        height: 9px;
+        line-height: 9px;    
+        border: 1px solid black;
+        font-size: 7px;
+        text-align: center;
+    }
+    #pagination .ellipsis {
+        line-height: 11px;        
+        font-size: 11px;
+    }
+    
+    #pagination a { color: black; text-decoration: none; }
+
+/* linia pozioma */
+.horiz_sep_line {
+    width: 517px;
+    height: 1px;
+    
+    background: url('../gfx/sep_line.png') no-repeat left;
+    
+    margin-left: 10px;
+    
+    clear: both;
+}
+
+/* blok zarejestruj sie */
+#register_invitation_box {
+    width: 283px; height: 54px;
+    z-index: 1;    
+    background: url('../gfx/blocks/register_invitation_box/background.png');
+}
+    #register_invitation_box .left {
+        position: absolute;
+        left: 30px; top: 4px;  
+        font-size: 11px;
+    }
+        #register_invitation_box .left a {
+            color: white;
+            text-decoration: none;
+        }
+    #register_invitation_box .right {
+        position: absolute;
+        right: 4px; top: 4px;       
+        font-size: 11px;
+    }
+        #register_invitation_box .right a {
+            color: white;
+            text-decoration: none;
+        }
+    #register_invitation_box .bottom {
+        position: absolute;
+        bottom: 5px; right: 4px;
+        font-size: 16px;
+    }
+        #register_invitation_box .bottom a {
+            color: white;
+            text-decoration: none;
+        }
+            #register_invitation_box .bottom a:hover { text-decoration: underline; }
+    
+
+/* blok etykiety */
+#etiquette {
+    width: 256px;
+    height: 66px;
+    background-color: black;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/* blok middleboxa */
+#middlebox {
+    width: 517px;
+    padding-bottom: 60px;   /* 36px + sth */
+    position: relative;
+}
+    #middlebox > .content {             /* alias #root_content. Tutaj jest umieszczona cała zabawa. Hahahaha */
+    	background-color: #666151;
+        width: 517px;
+    }
+    #middlebox > .footer {
+        position: absolute;
+        left: -77px;
+        bottom: 24px;
+        height: 36px;
+        width: 686px;
+        
+        background: url('../gfx/blocks/middlebox/footer.gif');
+    }
+        #middlebox > .footer > .center {
+            width: 502px;
+            margin-left: 84px;
+            margin-right: 90px;
+            
+            margin-top: 9px;
+        }
+            #middlebox > .footer > .center > .left { font-size: 12px; float: left; }
+            #middlebox > .footer > .center > .right { float: right; font-size: 12px; color: black; }
+                #middlebox > .footer > .center > .right > a { font-size: 12px; color: black; text-decoration: none; }
+
+/* blok newsow */
+#newsbox {
+    width: 230px;
+    position: relative;
+}
+    #newsbox > .header {
+        width: 230px; height: 38px;
+        position: relative;
+        
+        background: url('../gfx/blocks/newsbox/header.gif');
+    }
+    #newsbox > .content {
+        width: 230px; height: 230px;
+        overflow: hidden;
+        
+        background: url('../gfx/blocks/newsbox/sample.gif') repeat-y;
+    }
+        #newsbox > .content .element {
+            width: 220px;
+            padding: 5px 10px 5px 0;
+            text-align: right;
+        }
+            #newsbox > .content .element .label {
+                font-size: 13px; color: white;
+            }
+            #newsbox > .content .element .value {
+                font-size: 13px;
+            }
+                #newsbox > .content .element .value a {
+                    color: rgb(174, 98, 38);
+                    text-decoration: none;
+                }
+                #newsbox > .content .element .value a:hover { font-weight: bold; }
+        #newsbox > .content .ellipsis {
+            width: 230px; height: 1px;
+            background: url('../gfx/blocks/newsbox/sep.gif');
+        }
+    #newsbox .footer {
+        width: 230px; height: 8px;
+        background: url('../gfx/blocks/newsbox/footer.gif');
+    }
+
+/* blok shoutboxa */
+#shoutbox {
+    width: 230px;
+    position: relative;
+}
+    #shoutbox > .header {
+        width: 230px; height: 38px;
+        position: relative;
+        
+        background: url('../gfx/blocks/shoutbox/title.gif');
+    }
+    #shoutbox > .content {
+        width: 230px; height: 264px;
+        
+        background: url('../gfx/blocks/shoutbox/sample.gif') repeat-y;
+    }
+        #shoutbox > .content .init {
+            width: 230px; height: 239px;
+            overflow: hidden;
+            position: relative;
+        }
+            #shoutbox > .content .init #shoutbox_content { width: 230px; position: absolute; }
+            
+            /* ! */ #shoutbox > .content .init #shoutbox_content .b { background: url('../gfx/blocks/shoutbox/s_highlight.gif'); }
+            #shoutbox > .content .init #shoutbox_content > .content { 
+                padding-left: 30px;
+                padding-right: 15px;
+                width: 185px;
+                text-align: right;
+            }
+                #shoutbox > .content .init #shoutbox_content > .content .header { font-size: 11px; }
+                    #shoutbox > .content .init #shoutbox_content > .content .header .n1 { color: black; }
+                    #shoutbox > .content .init #shoutbox_content > .content .header .n2 { color: rgb(255, 165, 0); font-weight: bold; }
+                #shoutbox > .content .init #shoutbox_content > .content .content { font-size: 12px; color: white; }
+                
+            #shoutbox > .content .last input {
+                border: none;
+                width: 197px; height: 21px;
+                padding: 0 0 0 0;
+                
+                margin-left: 18px;
+                
+                font-size: 12px;
+                color: white;
+                
+                background: url('../gfx/textbox.gif');
+            }
+        #shoutbox > .content .last {
+            width: 230px; height: 25px;
+        }
+    #shoutbox .footer {
+        width: 230px; height: 8px;
+        background: url('../gfx/blocks/shoutbox/footer.gif');
+    }
+
+/* blok profilu użytkownika */
+#profile {
+    width: 251px; height: 310px;
+}
+    #profile .header {
+        width: 251px; height: 37px;        
+        position: relative;        
+    }
+        #profile .header .head {
+            float: left;
+            width: 7px; height: 37px;
+            
+            background: url('../gfx/blocks/profile/title_left.gif');
+        }
+        #profile .header .tail {
+            float: right;
+            width: 244px; height: 37px;
+            
+            background: url('../gfx/blocks/profile/title_sample.gif') repeat-x;            
+        }
+            #profile .header .tail .content {
+                font-size: 14px;
+                color: white;
+                
+                padding: 7px 0 0 7px;
+            }
+                #profile .header .tail .content .b { font-weight: bold; }
+
+    #profile > .content {
+        width: 251px; height: 267px;
+        
+        background: url('../gfx/blocks/profile/sample.gif') repeat-y;
+    }
+        #profile > .content a img { border: none; }       /* safeguard against clickable images having borders in some browsers */
+        #profile > .content .left { /* fota usera */
+            float: left;
+            margin: 5px 0 0 5px;
+        }
+            #profile > .content .left img { border: 1px solid black; }
+        #profile > .content .right { /* statystyki usera */
+            float: right;
+            width: 90px;
+            margin: 5px 8px 0 0;
+        }            
+            #profile > .content .right .element {
+                height: 20px;
+                line-height: 20px;
+                font-size: 11px;
+            }
+                #profile > .content .right .element .label { font-weight: bold; color: white; }
+                #profile > .content .right .element .value { float: right; }
+                    #profile > .content .right .element .value a { color: white; text-decoration: none; }
+                    
+                    
+        #profile > .content .n1 { width: 120px; height: 50px; text-align: center; float: left; margin-left: 5px; }
+            #profile > .content .n1 .label { font-size: 14px; color: white; }
+            #profile > .content .n1 .value { font-size: 13px; }
+                #profile > .content .n1 .value a { color: white; text-decoration: none; }
+                
+        #profile > .content .n2 { width: 120px; height: 50px; float: right; margin-right: 5px; position: relative; }
+            #profile > .content .n2 .content {
+                height: 35px;
+                position: absolute;
+                bottom: 0; left: 0;
+                width: 116px;
+                margin-left: 2px;
+
+                cursor: pointer;
+                
+                background: url('../gfx/blocks/profile/gallery.gif');
+            }
+            #profile > .content .n2 .content:hover { background: url('../gfx/blocks/profile/gallery_p.gif'); }
+        #profile > .content .n3 { width: 120px; height: 35px; float: left; margin-left: 5px; margin-top: 10px; }
+            #profile > .content .n3 .content {
+                height: 35px;
+                bottom: 0; left: 0;
+                width: 116px;
+                margin-left: 2px;
+                
+                cursor: pointer;
+
+                background: url('../gfx/blocks/profile/write.gif');
+            }
+            #profile > .content .n3 .content:hover { background: url('../gfx/blocks/profile/write_p.gif'); }
+
+        #profile > .content .n4 { width: 120px; height: 35px;  float: right; margin-right: 5px; margin-top: 10px; }
+            #profile > .content .n4 .content {
+                height: 35px;
+                bottom: 0; left: 0;
+                width: 116px;
+                margin-left: 2px;
+                
+                cursor: pointer;
+                
+                background: url('../gfx/blocks/profile/addphoto.gif');
+            }
+            #profile > .content .n4 .content:hover { background: url('../gfx/blocks/profile/addphoto_p.gif'); }
+
+        
+    #profile .footer {
+        width: 251px; height: 6px;
+        
+        background: url('../gfx/blocks/profile/footer.gif');           
+    }

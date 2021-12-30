@@ -1,0 +1,110 @@
+/* customization z main.css */
+/* welcomebar nie istnieje */
+#content_area_content {
+	width: 517px;
+	background: url('../gfx/aktualnosci/pglowny_gradient.gif') no-repeat;
+	height: 239px;
+	background-color: #676151;
+}
+		
+#content_area_padtop_leftmenu {
+		text-align: center;		/* positioning moje konto img */
+}		
+		
+#content_area_content_leftmenu, #content_area_content_rightmenu {  /* musza zawsze miec wspolna wysokosc */
+	height: 260px;
+}
+
+#acc_box_header {
+	height: 37px;
+	text-align: left;
+	width: 251px;
+	background: url('../gfx/lewy_box_tytul_sample.gif') repeat-x;
+}
+	#nickname_box {
+		color: white;
+		font-size: 14px;
+		display: inline-block;
+		padding-top: 7px;
+		padding-left: 7px;
+	}
+	#nickname_box #nickname { font-weight: bold; }
+
+#content_area_content_leftmenu #userphoto { border: 1px solid black; float: left; margin: 5px 0px 0px 5px;}
+#content_area_content_leftmenu { text-align: left; }
+#account_description {
+	float: right;
+	font-size: 11px;
+	width: 90px;
+	color: white; 
+	font-weight: bold;
+	line-height: 20px;
+	margin-right: 8px;
+	margin-top: 5px; 
+}
+	#account_description .value { float: right; }
+	#account_description a { color: white; }
+	
+#content_area_content_c {
+	padding: 53px 5px 5px 5px;
+	text-align: left;
+}
+
+/* kontent */
+.aktualnosci_separator {
+	background-color: black; 
+	width: 507px;
+	height: 1px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.aktualnosci_row {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: left;
+	font-size: 15px;
+}
+	.aktualnosci_row a { color: #e27f22; font-weight: bold; }
+	.dwalatatemu { font-size: 10px; padding-top: 5px; }
+
+
+
+#lewybox_panel {
+	border-collapse: collapse;
+	border-width: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+	#lewybox_panel div { width: 120px; }
+	#lewybox_panel img { border: none; }
+
+#napisz_wiadomosc {
+ height: 35px;
+ background: url('../gfx/button_napisz.gif') top left no-repeat;
+}
+	#napisz_wiadomosc:hover { background: url('../gfx/button_napisz_p.gif') top left no-repeat; }
+	
+#prywatna_galeria {
+ height: 50px;
+ background: url('../gfx/button_galeria.gif') bottom right no-repeat;
+}
+	#prywatna_galeria:hover { background: url('../gfx/button_galeria_p.gif') bottom right no-repeat; }
+
+#dodaj_zdjecie {
+ height: 35px;
+ background: url('../gfx/button_zdjecie.gif') top right no-repeat;
+}
+	#dodaj_zdjecie:hover { background: url('../gfx/button_zdjecie_p.gif') top right no-repeat; }	
+	
+#lewybox_panel_txt {
+	vertical-align: top;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+}
+	#zmodyfikuj_konto {
+		font-size: 13px;
+	}
+	#zmodyfikuj_konto a { color: white; }
+	#zmodyfikuj_konto a:hover { text-decoration: underline; }

@@ -1,0 +1,510 @@
+/* customization z main.css */
+#welcomebar_lft {
+	background: url('../gfx/bar/bar.png') center no-repeat;
+}
+#welcomebar_mid {
+		text-align: center;
+		font-size: 14px;
+}
+#welcomebar {
+	height: 66px;
+}
+#welcomebar_rgt {
+	
+}
+	#welcomebar_rgt div { color: white; }
+
+	#welcomebar_rgt div.left, #welcomebar_rgt div.right {
+		padding-top: 4px;
+		font-size: 11px;
+	}
+	#welcomebar_rgt_register { 
+		position: absolute;
+		font-size: 16px;
+		bottom: 20px;
+		right: 4px;
+	}
+	#welcomebar_rgt_register:hover { text-decoration: underline; }
+
+#content_area {
+	width: 998px;
+}
+	#content_area_header { height: 37px; width: 998px; position: relative; }
+	#content_area_header_center {
+		width: 970px;
+		height: 27px;
+		text-align: left;
+		position: absolute;
+		top: 0;
+		left: 9px;
+		padding-left: 10px;
+		padding-top: 10px;
+		font-size: 15px;
+		color: white;
+		margin: 0 0 0 0;
+		background: url('../gfx/news/naglowek_sample.png') repeat-x;
+	}
+	#content_area_header_imgl {
+		position: absolute;
+		top: 0; left: 0;
+		height: 37px;
+		width: 9px;
+		background: url('../gfx/news/naglowek_lewy_rog.png');
+	}
+	#content_area_header_imgr {
+		position: absolute;
+		top: 0; right: 0;
+		height: 37px;
+		width: 9px;
+		background: url('../gfx/news/naglowek_prawy_rog.png');
+	}	
+	
+	#content_area_content {
+		width: 998px;
+		font-size: 12px;
+		text-align: left;
+		color: white;
+		padding-top: 10px;
+		background: url('../gfx/news/tresc_tlo_sample.png') repeat-y;
+	}
+	
+	
+		#content_area_gallery_top {	/* upper band - texts, name, gallery */
+		}
+			#content_area_gallery_top_name {
+				float: left;
+				margin-left: 10px;
+			}
+			#content_area_gallery_top_staly {
+				float: right;
+				margin-right: 10px;
+				color: red;
+				font-weight: bold;
+				font-size: 13px;
+			}
+			
+			#content_area_gallery_box {
+				width: 830px;
+				height: 500px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+	
+	
+	
+	
+.ad-gallery {
+  width: 830px;
+}
+.ad-gallery, .ad-gallery * {
+  margin: 0;
+  padding: 0;
+}
+  .ad-gallery .ad-image-wrapper {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+    .ad-gallery .ad-image-wrapper .ad-loader {
+      position: absolute;
+      z-index: 10;
+      top: 48%;
+      left: 48%;
+      border: 1px solid #CCC;
+    }
+    .ad-gallery .ad-image-wrapper .ad-next {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 25%;
+      height: 100%;
+      cursor: pointer;
+      display: block;
+      z-index: 100;
+    }
+    .ad-gallery .ad-image-wrapper .ad-prev {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25%;
+      height: 100%;
+      cursor: pointer;
+      display: block;
+      z-index: 100;
+    }
+    .ad-gallery .ad-image-wrapper .ad-prev, .ad-gallery .ad-image-wrapper .ad-next {
+      /* Or else IE will hide it */
+      background: url(non-existing.jpg)\9
+    }
+      .ad-gallery .ad-image-wrapper .ad-prev .ad-prev-image, .ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+        background: url(ad_prev.png);
+        width: 30px;
+        height: 30px;
+        display: none;
+        position: absolute;
+        top: 47%;
+        left: 0;
+        z-index: 101;
+      }
+      .ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+        background: url(ad_next.png);
+        width: 30px;
+        height: 30px;
+        right: 0;
+        left: auto;
+      }
+    .ad-gallery .ad-image-wrapper .ad-image {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      z-index: 9;
+    }
+      .ad-gallery .ad-image-wrapper .ad-image a img {
+        border: 0;
+      }
+      .ad-gallery .ad-image-wrapper .ad-image .ad-image-description { display: none; }
+  .ad-gallery .ad-controls { display: none; }
+    .ad-gallery .ad-info {
+      float: left;
+    }
+    .ad-gallery .ad-slideshow-controls {
+      float: right;
+    }
+      .ad-gallery .ad-slideshow-controls .ad-slideshow-start, .ad-gallery .ad-slideshow-controls .ad-slideshow-stop {
+        padding-left: 5px;
+        cursor: pointer;
+      }
+      .ad-gallery .ad-slideshow-controls .ad-slideshow-countdown {
+        padding-left: 5px;
+        font-size: 0.9em;
+      }
+    .ad-gallery .ad-slideshow-running .ad-slideshow-start {
+      cursor: default;
+      font-style: italic;
+    }
+  .ad-gallery .ad-nav {
+    width: 100%;
+    position: relative;
+  }
+    .ad-gallery .ad-forward, .ad-gallery .ad-back {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      z-index: 10;
+    }
+    /* IE 6 doesn't like height: 100% */
+    * html .ad-gallery .ad-forward, .ad-gallery .ad-back {
+      height: 100px;
+    }
+    .ad-gallery .ad-back {
+      cursor: pointer;
+      left: -20px;
+      width: 13px;
+      display: block;
+      background: url(ad_scroll_back.png) 0px 22px no-repeat;
+    }
+    .ad-gallery .ad-forward {
+      cursor: pointer;
+      display: block;
+      right: -20px;
+      width: 13px;
+      background: url(ad_scroll_forward.png) 0px 22px no-repeat;
+    }
+    .ad-gallery .ad-nav .ad-thumbs {
+      overflow: hidden;
+      width: 100%;
+      height: 56px;
+    }
+      .ad-gallery .ad-thumbs .ad-thumb-list {
+        float: left;
+        width: 9000px;
+        height: 56px;
+        list-style: none;
+      }
+        .ad-gallery .ad-thumbs li {
+          float: left;
+          padding-right: 5px;
+        }
+          .ad-gallery .ad-thumbs li a {
+            display: block;
+          }
+            .ad-gallery .ad-thumbs li a img {
+              border: 3px solid #CCC;
+              display: block;
+            }
+            .ad-gallery .ad-thumbs li a.ad-active img {
+              border: 3px solid #616161;
+            }
+/* Can't do display none, since Opera won't load the images then */
+.ad-preloads {
+  position: absolute;
+  left: -9000px;
+  top: -9000px;
+}	
+	
+	
+	
+	
+
+
+		#content_area_triple {
+			width: 998px;
+			background: url('../gfx/bar/ocena_tlo_sample.png') repeat-y;
+		}
+			#content_area_opis { width: 381px; float: right; }
+				#content_area_opis_box {
+					padding-left: 15px;
+					padding-top: 10px;
+					padding-right: 15px;
+					color: white;
+					font-size: 12px;
+				}
+			#content_area_oceny { width: 254px; float: right; }
+				#content_area_oceny_box {
+					width: 254px;
+					height: 280px;
+					font-family: Arial;
+					color: white;
+				}
+					#avg_box { width: 100%; text-align: center; font-size: 15px; padding-top: 5px; }
+						#avg_box span { font-weight: bold; }
+					#cnt_box { width: 100%; text-align: center; font-size: 12px; padding-bottom: 5px; }
+					
+				#ol_table { border: none; border-collapse: collapse; border-spacing: 0; padding: 0; margin: 0;}
+				#ol_table tr { height: 19px; padding: 0; margin: 0;}
+				#ol_table td { height: 19px; vertical-align: middle; padding: 0; margin: 0; font-size: 10px; line-height: 1px;}
+					.ol_30 { width: 10px; }
+					.ol_label { width: 160px; }
+					.ol_arrow { width: 19px;  cursor: hand; cursor: pointer; }
+						.select_opt { cursor: hand; cursor: pointer; text-align: center; width: 100%;}
+						.select_opt:hover { background-color: orange; }
+					.ol_mygrade { width: 40px; color: white; text-align: center; }
+					.ol_ograde { color: black; width: 25px; }
+					
+					.ol_t1 { background-color: #333029; }
+					.ol_t2 { background-color: #676151; }
+					
+			#content_area_bywalcy { width: 363px; float: right; }
+				#content_area_bywalcy_box { padding: 5px 10px 0px 20px; position: relative; height: 260px; }					
+					#wiecej_bywalcow { position: absolute; bottom: -25px; right: 10px; font-size: 12px; color: white; font-family: Arial; font-weight: bold; }
+				#content_area_bywalcy_box img { border: none; margin-right: 15px; margin-bottom: 5px; }
+			.content_area_header {
+				height: 28px;
+				font-weight: bold;
+				background: url('../gfx/bar/belka_pozioma_sample.png') repeat-x;
+				text-align: center;
+				font-size: 14px;
+				color: white;
+				padding-top: 10px; 
+			}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#content_area_footer {
+		width: 998px;
+		height: 11px;
+		background: url('../gfx/bar/ocena_tlo_dol.png');
+	}
+	
+#comments {
+	background: url('../gfx/news/komentarze.png') no-repeat top;
+	padding-top: 48px;
+	width: 517px;
+	float: left;
+	margin-left: 251px;	
+	text-align: left;
+	color: white;
+	font-size: 12px;
+}
+	.comments_b1 {
+		width: 511px;
+		background-color: #333029;
+		padding: 3px 3px 3px 3px;
+	}
+	.comments_b2 {
+		width: 511px;
+		background-color: #676151;
+		padding: 3px 3px 3px 3px;
+	}
+
+	.comments_kiedy {
+		font-size: 11px;
+		padding-right: 8px;
+	}
+	.comments_kto {
+		color: orange;
+	}	
+	
+		.kaszak {
+			float: right;
+			margin-top: 3px;
+			width: 11px;
+			height: 12px;
+			background: url('../gfx/odbiorcza/krzyzyk.gif');
+		}
+		.kaszak:hover { background: url('../gfx/odbiorcza/krzyzyk_p.gif'); }
+		.kaszak a { display: block; width: 100%; height: 100%; }
+		
+	#comments_add {
+		width: 517px;
+		padding: 0 0 0 0;
+		color: white;
+		height: 21px;
+		background: url('../gfx/news/pole.gif') repeat-x;
+		border: none;
+	}
+	
+	
+
+/* Dropdown control */
+.selectBox-dropdown {
+	/* width: 100px; /* width = (desired width) - padding-right */
+	width: 19px;
+	position: relative;
+	border: solid 0px #BBB;	/* bez tego IE wariuje */
+	text-decoration: none;
+	color: #000;
+	outline: none;
+	vertical-align: middle;
+	height: 19px;
+	display: inline-block;
+	cursor: default;
+	font-size: 13px;
+	margin-left: 30px;
+}
+
+
+
+.selectBox-dropdown .selectBox-label {
+	width: 0px;
+	height: 19px;
+	text-align: left;
+	display: inline-block;
+	color: white;
+	overflow: hidden;
+}
+
+.selectBox-dropdown .selectBox-arrow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 19px;
+	height: 19px;
+	background: url('../gfx/rejestracja/button_strzalka.gif');
+}
+
+
+/* Dropdown menu */
+.selectBox-dropdown-menu {
+	position: absolute;
+	z-index: 99999;
+	max-height: 200px;
+	background: #FFF;
+	overflow: auto;
+	width: 80px !important;
+}
+
+
+/* Inline control */
+.selectBox-inline {
+	outline: none;
+	background: #FFF;
+	display: inline-block;
+	overflow: auto;
+}
+
+.selectBox-inline:focus {
+	border-color: #666;
+}
+
+
+/* Options */
+.selectBox-options,
+.selectBox-options LI,
+.selectBox-options LI A {
+	list-style: none;
+	display: block;
+	cursor: default;
+	padding: 0;
+	margin: 0;
+}
+
+.selectBox-options LI A {
+	line-height: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	background: 6px center no-repeat;
+}
+
+.selectBox-options LI.selectBox-hover A {
+	background-color: #EEE;
+}
+
+
+.selectBox-options LI.selectBox-selected A {
+	background-color: #C8DEF4;
+}
+
+.selectBox-options .selectBox-optgroup {
+	color: #666;
+	background: #EEE;
+	font-weight: bold;
+	line-height: 1;
+	padding: 0 .3em;
+	white-space: nowrap;
+}
+#send_comment_news_submit {
+padding: 0 0 0 0;
+width: 53px;
+background: url('../gfx/button_wyslij.gif');
+margin-left: 8px;
+border: none; 
+border-width: 0;
+}
+#send_comment_news_submit:hover { background: url('../gfx/button_wyslij_p.gif'); }
+
+#send_comment_news_submit_background {
+	height: 50px;
+	width: 517px;
+	float: left;
+	background-color: #676151;
+}
+#login_to_add_comment_background {
+	height: 15px;
+	width: 517px;
+	float: left;
+	background-color: #676151;
+}
+
+
+#bywalec_submit {
+padding: 0 0 0 0;
+width: 143px;
+height: 34px;
+background: url('../gfx/bar/button_bywalec.gif');
+margin-left: 8px;
+border: none; 
+border-width: 0;
+}
+#bywalec_submit:hover { background: url('../gfx/bar/button_bywalec_p.gif'); }
+
+#niebywalec_submit {
+padding: 0 0 0 0;
+width: 161px;
+height: 34px;
+background: url('../gfx/bar/button_niebywalec.gif');
+margin-left: 8px;
+border: none; 
+border-width: 0;
+}
+#niebywalec_submit:hover { background: url('../gfx/bar/button_niebywalec_p.gif'); }

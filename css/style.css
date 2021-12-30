@@ -1,0 +1,57 @@
+/*
+    definiuje ogólne zachowanie strony
+    autor: Piotr Maślanka
+*/
+body {
+    background-color: black;
+    font-family: Arial;
+}
+
+/* af to takie hiperłącze które jako dziecko danego diva który cały ma być hiperlinkiem */
+a.af { display: block; width: 100%; height: 100%; }
+
+.clear { clear: both; }
+
+/*  klasy nigdy nie mają sensu same z siebie, za wyjątkiem:
+        .clear
+        .af
+        
+    identyfikatory ogólne:
+        left, right, top, bottom, center, middle
+        header, content, footer
+        label, value
+        head, tail
+        init, last
+        element, ellipsis
+        b
+*/
+
+#mutable_content_holder {
+    width: 1026px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
+    
+}
+    #mutable_content_holder > .left {
+        position: absolute;
+        
+        top: 0; left: -30px;     
+
+        width: 30px;
+        height: 215px;
+        
+        background: url('../gfx/mc_moustache_l.png');
+    }
+    #mutable_content_holder > .right {
+        position: absolute;
+        
+        top: 0; right: -30px;     
+
+        width: 30px;
+        height: 215px;
+        
+        background: url('../gfx/mc_moustache_r.png');
+    }    

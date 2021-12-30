@@ -1,0 +1,23 @@
+﻿/*
+    definiuje elementy górne (czyli hasło przewodnie + obrazek)
+    autor: Piotr Maślanka
+*/
+
+#top_haslo_przewodnie {
+    margin-top: 30px;
+
+    width: 517px;
+    height: 43px;
+    margin-left: auto; margin-right: auto;
+    
+    background: url('../gfx/top_haslo_przewodnie.gif');
+}
+
+#top_obrazek {
+    width: 1026px;
+    height: 287px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background: url('../gfx/top.png');
+}

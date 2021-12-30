@@ -1,0 +1,166 @@
+/* kod */
+
+.positioning_handle img { cursor: hand; cursor: pointer; }
+
+#photobox {
+	width: 1026px;
+	margin: 0px auto;
+	height: 150px;
+	position: relative;
+    background-color: black;
+}
+
+	#photobox_left {
+		margin-left: 19px;
+		float: left;
+		height: 150px;
+		width: 59px;
+		background: url('../gfx/glowna/slideshow_lewo.gif');
+	}
+	
+	#photobox_right {
+		float: right;
+		margin-right: 18px;
+		height: 150px;
+		width: 59px;
+		background: url('../gfx/glowna/slideshow_prawo.gif');
+	}
+	#photobox_right:hover { background: url('../gfx/glowna/slideshow_prawo_p.gif'); }
+	#photobox_left:hover { background: url('../gfx/glowna/slideshow_lewo_p.gif'); }
+
+	#photobox_mid {
+		height: 150px;
+		width: 871px;	
+		overflow: hidden;
+		background: url('../gfx/glowna/slideshow_tlo.gif');
+	}
+
+/* customization z main.css */
+
+#welcomebar_lft {
+	background: url('../gfx/glowna/witamy.gif') center no-repeat;
+    background-color: black;
+}
+#welcomebar_mid {
+		background: url('../gfx/pglowny_srodek.gif');
+}
+#welcomebar {
+	height: 66px;
+}
+#welcomebar_rgt {
+	/* background: url('../gfx/nie_masz_jeszcze_konta_sample.gif') repeat-x;*/
+}
+	#welcomebar_rgt div { color: white; }
+
+	#welcomebar_rgt div.left, #welcomebar_rgt div.right {
+		padding-top: 4px;
+		font-size: 11px;
+	}
+	#welcomebar_rgt_register { 
+		position: absolute;
+		font-size: 16px;
+		bottom: 20px;
+		right: 4px;
+	}
+	#welcomebar_rgt_register:hover { text-decoration: underline; }
+
+	
+#content_area_padtop_content {
+		width: 517px;
+		height: 53px;
+		background: url('../gfx/pglowny_srodek2.gif') repeat-x;	
+}
+
+#content_area_content {
+	background-color: #676151;
+}
+		
+#content_area_content_leftmenu, #content_area_content_rightmenu {  /* musza zawsze miec wspolna wysokosc */
+	height: 280px;
+}
+
+#content_area_content_c { text-align: left; }
+#supersection0 {
+	margin-left: 74px;
+	margin-right: 45px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#content_area_content_c img { border: 1px solid #211e14; }
+
+.supersection { margin-left: 30px; margin-top: 20px; margin-right: 30px; color: white; font-size: 13px; min-height: 242px; margin-bottom: 20px; text-align: justify; }
+.supersection div { text-align: justify; line-height: 18px; }
+
+	.ssfota { text-align: center; }
+
+/* kontent */
+#barname {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#top_bary {
+	float: right;
+	text-align: right;
+	font-size: 15px;
+	width: 100px;
+	line-height: 25px;
+}
+	#top_bary a { color: black; }
+	#top_bary_label {
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	
+	
+.opisbaru {
+	width: 268px;
+	font-size: 13px;
+}
+	
+.newsfuck {	/* jeden item newsow */
+	padding: 5px 10px 5px 0px;
+	text-align: right;
+	font-size: 13px;
+	color: white;
+	width: 220px;
+	background: url('../gfx/prawy_box_kreska.gif') bottom right no-repeat;
+	
+}
+	.czytajwiecej {
+		color: #ae6226;
+		font-size: 13px;
+	}
+	.czytajwiecej:hover { font-weight: bold;}
+	
+	
+/* scroll */
+#scroll {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+/* 
+	I am the div of my scroll
+	width is my body, and style is my blood
+	I have padded over a thousand pixels
+	Unknown to IE
+	Nor known to Firefox
+	Have withstood pain to clip many spans
+	Yet this height will never overflow anything
+	So as I type, UNLIMITED SCROLL WORKS!
+	
+*/
+
+#scrollable > div { 
+	height: 150px;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	z-index: 1;
+}
+#scrollable img { 

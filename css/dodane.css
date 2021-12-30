@@ -1,0 +1,155 @@
+/* customization z main.css */
+#welcomebar_lft {
+	background: url('../gfx/szukaj/wyszukiwanie.gif') center no-repeat;
+}
+#welcomebar_mid {		
+		text-align: center;
+		font-size: 14px;
+}
+#welcomebar {
+	height: 66px;
+}
+#welcomebar_rgt {
+	
+}
+	#welcomebar_rgt div { color: white; }
+
+	#welcomebar_rgt div.left, #welcomebar_rgt div.right {
+		padding-top: 4px;
+		font-size: 11px;
+	}
+	#welcomebar_rgt_register { 
+		position: absolute;
+		font-size: 16px;
+		bottom: 20px;
+		right: 4px;
+	}
+	#welcomebar_rgt_register:hover { text-decoration: underline; }
+
+#content_area_content {
+	width: 517px;
+	background: url('../gfx/dodane/tlo.png') no-repeat;
+	height: 224px;
+	background-color: #666151;
+}
+				
+#content_area_content_leftmenu, #content_area_content_rightmenu {  /* musza zawsze miec wspolna wysokosc */
+	height: 260px;
+	overflow: hidden;
+}
+
+#acc_box_header {
+	height: 37px;
+	text-align: left;
+	width: 251px;
+	background: url('../gfx/lewy_box_tytul_sample.gif') repeat-x;
+}
+	#nickname_box {
+		color: white;
+		font-size: 15px;
+		display: inline-block;
+		padding-top: 7px;
+		padding-left: 7px;
+	}
+	#nickname_box #nickname { font-weight: bold; }
+
+#acc_box_header {
+	height: 37px;
+	text-align: left;
+	width: 251px;
+	background: url('../gfx/lewy_box_tytul_sample.gif') repeat-x;
+}
+	#nickname_box {
+		color: white;
+		font-size: 14px;
+		display: inline-block;
+		padding-top: 7px;
+		padding-left: 7px;
+	}
+	#nickname_box #nickname { font-weight: bold; }
+
+#content_area_content_leftmenu #userphoto { border: 1px solid black; float: left; margin: 5px 0px 0px 5px;}
+#content_area_content_leftmenu { text-align: left; }
+#account_description {
+	float: right;
+	font-size: 11px;
+	width: 90px;
+	color: white; 
+	font-weight: bold;
+	line-height: 20px;
+	margin-right: 8px;
+	margin-top: 5px; 
+}
+	#account_description .value { float: right; }
+	#account_description a { color: white; }
+
+#lewybox_panel {
+	border-collapse: collapse;
+	border-width: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+	#lewybox_panel div { width: 120px; }
+	#lewybox_panel img { border: none; }
+
+#napisz_wiadomosc {
+ height: 35px;
+ background: url('../gfx/button_napisz.gif') top left no-repeat;
+}
+	#napisz_wiadomosc:hover { background: url('../gfx/button_napisz_p.gif') top left no-repeat; }
+	
+#prywatna_galeria {
+ height: 50px;
+ background: url('../gfx/button_galeria.gif') bottom right no-repeat;
+}
+	#prywatna_galeria:hover { background: url('../gfx/button_galeria_p.gif') bottom right no-repeat; }
+
+#dodaj_zdjecie {
+ height: 35px;
+ background: url('../gfx/button_zdjecie.gif') top right no-repeat;
+}
+	#dodaj_zdjecie:hover { background: url('../gfx/button_zdjecie_p.gif') top right no-repeat; }	
+	
+#lewybox_panel_txt {
+	vertical-align: top;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+}
+	#zmodyfikuj_konto {
+		font-size: 13px;
+	}
+	#zmodyfikuj_konto a { color: white; }
+	#zmodyfikuj_konto a:hover { text-decoration: underline; }
+
+#content_area_content_c {
+	padding: 0px 5px 5px 5px;
+	text-align: left;
+}
+
+	
+#menu_cut {
+	margin-top: 20px;
+	width: 507px;
+	text-align: center;
+}
+
+	#menu_cut table { margin-left: auto; margin-right: auto; font-size: 12px; }
+	#menu_cut td { height: 21px; vertical-align: middle; }
+
+.mc_spacer { width: 20px; }
+
+	#box_z_barami { width: 420px; margin-left: 48px; margin-top: 20px; margin-bottom: 20px; }
+	
+	.s_bar_compact { width: 175px; height: 221px; font-size: 12px; text-align: center; color: white; margin-right: 30px; display: inline-block; }
+		.s_bar_box { width: 173px; height: 170px; border: 1px solid black; background-color: #393529; margin-right: 30px; display: inline-block; }
+			.s_bar_photo { margin: 10px 4px 10px 4px; }
+				.s_bar_photo img { width: 167px; height: 77px; margin-left: auto; margin-right: auto; }
+			.s_bar_name { background-color: #252116; height: 18px; text-align: center; width: 173px; line-height: 18px; margin-top: 20px; margin-bottom: 10px; }
+			.s_bar_grading { margin-bottom: 20px; width: 173px;}
+		.s_bar_manage { margin-top: 15px; width: 116px; height: 36px; margin-left: auto; margin-right: auto; background: url('../gfx/dodane/button_zarzadzaj.gif'); }
+			.s_bar_manage a { display: block; width: 100%; height: 100%; }
+		.s_bar_manage:hover { background: url('../gfx/dodane/button_zarzadzaj_p.gif'); }
+
+

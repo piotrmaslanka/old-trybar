@@ -1,0 +1,209 @@
+/* customization z main.css */
+#welcomebar_lft {
+	background: url('../gfx/szukaj/wyszukiwanie.png') center no-repeat;
+}
+#welcomebar_mid {		
+		text-align: center;
+		font-size: 14px;
+}
+#welcomebar {
+	height: 66px;
+}
+#welcomebar_rgt {
+    background-color: transparent !important;
+}
+	#welcomebar_rgt div { color: white; }
+
+	#welcomebar_rgt div.left, #welcomebar_rgt div.right {
+		padding-top: 4px;
+		font-size: 11px;
+	}
+	#welcomebar_rgt_register { 
+		position: absolute;
+		font-size: 16px;
+		bottom: 20px;
+		right: 4px;
+	}
+	#welcomebar_rgt_register:hover { text-decoration: underline; }
+
+#content_area_content {
+	width: 517px;
+	background: url('../gfx/szukaj/tlo_part2.png') no-repeat;
+	height: 224px;
+	background-color: #666151;
+}
+				
+#content_area_content_leftmenu, #content_area_content_rightmenu {  /* musza zawsze miec wspolna wysokosc */
+	height: 170px;
+	overflow: hidden;
+}
+
+#acc_box_header {
+	height: 37px;
+	text-align: left;
+	width: 251px;
+	background: url('../gfx/lewy_box_tytul_sample.gif') repeat-x;
+}
+	#nickname_box {
+		color: white;
+		font-size: 15px;
+		display: inline-block;
+		padding-top: 7px;
+		padding-left: 7px;
+	}
+	#nickname_box #nickname { font-weight: bold; }
+
+#content_area_content_leftmenu { 
+	padding: 0px 5px 0px 5px;
+	color: white;
+	font-size: 11px;
+}
+
+#content_area_content_c {
+	padding: 0px 5px 5px 5px;
+	text-align: left;
+}
+
+	
+#menu_cut {
+	margin-top: 20px;
+	width: 507px;
+	text-align: center;
+}
+
+	#menu_cut table { margin-left: auto; margin-right: auto; font-size: 12px; }
+	#menu_cut td { height: 21px; vertical-align: middle; }
+
+.mc_spacer { width: 20px; }
+
+	#box_z_barami { width: 420px; margin-left: 48px; margin-top: 20px; margin-bottom: 20px; }
+	
+	.s_bar_box { width: 173px; height: 170px; font-size: 12px; text-align: center; border: 1px solid black; background-color: #393529; color: white; margin-right: 30px; display: inline-block; }
+		.s_bar_photo { margin: 10px 4px 10px 4px; }
+			.s_bar_photo img { width: 167px; height: 77px; margin-left: auto; margin-right: auto; }
+		.s_bar_name { background-color: #252116; height: 18px; text-align: center; width: 173px; line-height: 18px; margin-top: 20px; margin-bottom: 10px; }
+		.s_bar_grading { margin-bottom: 20px; width: 173px;}
+
+
+#szukaj_button { border: none; width: 174px; height: 52px; background: url('../gfx/szukaj/button_szukaj.gif'); margin-left: 165px; }
+#szukaj_button:hover { background: url('../gfx/szukaj/button_szukaj_p.gif'); }
+
+
+.input-text {
+	width: 194px; height: 21px; border: none; 
+	padding: 0 0 0 3px;
+	color: white;
+	background: url('../gfx/logowanie/pole.gif');		
+	font-size: 12px;
+	font-family: Arial;
+}
+.selectBox-dropdown {
+	width: 200px; /* width = (desired width) - padding-right */
+	position: relative;
+	border: solid 0px #BBB;	/* bez tego IE wariuje */
+	line-height: 1.5;
+	text-decoration: none;
+	color: #000;
+	outline: none;
+	vertical-align: middle;
+	height: 19px;
+	background: url('../gfx/rejestracja/pole.gif');
+	display: inline-block;
+	cursor: default;
+}
+
+.selectBox-dropdown .selectBox-label {
+	width: 100%;
+	padding: .2em .3em;
+	text-align: left;
+	display: inline-block;
+	white-space: nowrap;
+	color: white;
+	overflow: hidden;
+}
+
+.selectBox-dropdown .selectBox-arrow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 19px;
+	height: 100%;
+	background: url('../gfx/rejestracja/button_strzalka.gif');
+}
+
+
+/* Dropdown menu */
+.selectBox-dropdown-menu {
+	position: absolute;
+	z-index: 99999;
+	max-height: 200px;
+	background: #FFF;
+	overflow: auto;
+}
+
+
+/* Inline control */
+.selectBox-inline {
+	width: 250px;
+	outline: none;
+	background: #FFF;
+	display: inline-block;
+	overflow: auto;
+}
+
+.selectBox-inline:focus {
+	border-color: #666;
+}
+
+
+/* Options */
+.selectBox-options,
+.selectBox-options LI,
+.selectBox-options LI A {
+	list-style: none;
+	display: block;
+	cursor: default;
+	padding: 0;
+	margin: 0;
+}
+
+.selectBox-options LI A {
+	line-height: 1.5;
+	padding: 0 .5em;
+	white-space: nowrap;
+	overflow: hidden;
+	background: 6px center no-repeat;
+}
+
+.selectBox-options LI.selectBox-hover A {
+	background-color: #EEE;
+}
+
+
+.selectBox-options LI.selectBox-selected A {
+	background-color: #C8DEF4;
+}
+
+.selectBox-options .selectBox-optgroup {
+	color: #666;
+	background: #EEE;
+	font-weight: bold;
+	line-height: 1.5;
+	padding: 0 .3em;
+	white-space: nowrap;
+}
+
+.newsfuck {	/* jeden item newsow */
+	padding: 5px 10px 5px 0px;
+	text-align: right;
+	font-size: 13px;
+	color: white;
+	width: 220px;
+	background: url('../gfx/prawy_box_kreska.gif') bottom right no-repeat;
+	
+}
+	.czytajwiecej {
+		color: #ae6226;
+		font-size: 13px;
+	}
+	.czytajwiecej:hover { font-weight: bold;}
